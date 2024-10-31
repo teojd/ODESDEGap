@@ -196,7 +196,7 @@ for i in range(i,10000):
       print('Iteration: %d, Loss: %.6f, Res: %.6f, IC: %.6f, BC: %.10f' % 
             (i,loss[0].item(),loss[1].item(),loss[2].item(),loss[3].item()))
       writer.add_scalars('PINN Loss'+str(lr), {'train':loss[0].cpu().detach().numpy()}, i)
-'''
+
 
 
 
@@ -276,3 +276,4 @@ plt.show()
 
 
 # %%
+'''
